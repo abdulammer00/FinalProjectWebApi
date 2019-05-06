@@ -1,0 +1,139 @@
+.banner {
+  width: 100%;
+  height: 600px;
+  margin-top: -25px;
+  background-image: url('cinta.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+.banner .banner__title {
+  width: 100%;
+  position: absolute;
+  color: white;
+}
+.banner .banner__title h1{
+  font-family: cursive;
+  font-size: 60px;
+}
+.banner .banner__shadow {
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  position: absolute;
+  top: 0;
+  opacity: 0.5;
+}
+.banner .banner__button {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  bottom: 15%;
+}
+.banner .banner__button button{
+  width: 15em;
+  height: 3em;
+  font-size: 20px;
+  border-radius: 30px;
+  font-weight: 700;
+  outline: none;
+  transition: background-color 0.3s ease-in-out;
+}
+section h2.section-heading {
+   
+  background-color: #fed136;
+  font-size: 40px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+section h3.section-subheading {
+ 
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 75px;
+  text-transform: none;
+  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+section h4.section-subheading {
+ 
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 75px;
+  text-transform: none;
+  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+#team {
+  background-color: #DEE0E2;
+}
+.team-member {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.team-member img {
+  width: 225px;
+  height: 225px;
+  border: 7px solid white;
+}
+.team-member h4 {
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-transform: none;
+}
+.team-member p {
+  margin-top: 0;
+}
+ul.social-buttons {
+  margin-bottom: 0;
+}
+ul.social-buttons li a {
+  font-size: 20px;
+  line-height: 40px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  color: white;
+  border-radius: 100%;
+  outline: none;
+  background-color: #212529;
+}
+ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
+  background-color: #fed136;
+}
+#services {
+  padding: 0 0 50px 0;
+  margin-top:-25px;
+}
+.service-heading {
+  margin: 15px 0;
+  text-transform: none;
+}
+footer {
+  padding: 25px 0;
+  text-align: center;
+  background-color: #323E4D;
+}
+footer span.copyright {
+  font-size: 90%;
+  line-height: 40px;
+  text-transform: none;
+  color: white;
+}
+
+h3{
+  background-image: url('cinta.jpg');
+  font-size: 90%;
+  line-height: 40px;
+  text-transform: none;
+  color: white;
+}
+  

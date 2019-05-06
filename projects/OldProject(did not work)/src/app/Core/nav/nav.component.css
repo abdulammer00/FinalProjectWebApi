@@ -1,0 +1,18 @@
+.menu-item__icon {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.menu-item__text {
+  vertical-align: middle;
+}
+nav {
+  border-radius: 0;
+}
+img {
+  max-height: 40px;
+  border: 2px solid white;
+  display: inline;
+  position: relative;
+  top: 10px;
+  border-radius: 50%;
+}

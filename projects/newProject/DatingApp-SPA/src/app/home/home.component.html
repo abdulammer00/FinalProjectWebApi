@@ -1,0 +1,56 @@
+<!--
+    container -- Bootstrap provide a bit of sensoring and padding around the content inside the container
+    mt-5 -- Represents a bootstrap margin. mt means margin-top and 5 is an element of distance from the top
+-->
+<div class="container mt-5">
+
+  <div *ngIf="!registerMode" style="text-align: center">
+    <h1>
+      <p style="font-family:Algerian; color:yellow; font-size: 30px;" class="lead"></p>
+    </h1>
+    <h2>
+      <br><br>
+      <p style="font-family:forte; color:red; font-size: 30px;" class="lead">Your Destiny Is Waiting... </p>
+      <p style="font-family:forte; color:yellow; font-size: 20px;" class="lead">All
+        you need
+        to do is sign up!</p>
+    </h2>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <br><br><br><br> <br><br><br>
+    <div class="text-center">
+      <!--
+        Add mr-2 for spacing  
+      -->
+      <button class="btn btn-primary btn-lg mr-2" (click)="setRegisterMode(true)">Register</button>
+      <button class="btn btn-info btn-lg">Learn more</button>
+    </div>
+  </div>
+
+  <div *ngIf="registerMode" class="container">
+    <div class="row justify-content-center">
+      <!--
+          A bootstrap grid is made up of 12 columns in total.
+          We are going to use 4 of them to show our register form.
+      -->
+      <div class="col-4">
+        <!--
+            This will demonstrate a child to parent component communication using output properties
+            by emitting an output from our child component register.component which will be then received by our
+            parent component home.component.  The (cancelRegister) is an event method in our child component
+            register.component which emits a boolean value and the setRegisterMode($event) is an method in our
+            parent component home.component which accepts boolean as a parameter.
+        -->
+        <app-register (cancelRegister)="setRegisterMode($event)"></app-register>
+      </div>
+    </div>
+  </div>
+
+</div>

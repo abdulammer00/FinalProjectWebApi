@@ -1,0 +1,64 @@
+<!--
+
+  We are going to use the card component from Bootstrap.
+  Source: https://getbootstrap.com/docs/4.1/components/card/
+
+    We are also modifying some behaviour of the .card class to zoom-in/out
+    when the user selects the image.  The modification can be found in
+    member-card.component.css.
+
+-->
+
+<!--mb for margin bottom-->
+<div class="card mb-4">
+  <!--
+      If we want to absolutely position the user, heart, and envelope buttons, then the container
+      which is the <div class="card-img-wrapper"> should be relatively positioned element
+  -->
+  <div class="card-img-wrapper">
+    <img class="card-img-top" src="{{user.photoUrl || '../../../assets/user.png'}}" alt="{{user.knownAs}}" />
+    <!--
+        Add an ordered list of buttons which are inline so that the buttons will
+        appear horizontally align.  We will also give it a class of .member-icons
+        so that we can have the ability to style it.  We will also give it an
+        .animate class so that we can add animate styles to the button. And we will
+        add .text-center class so that the buttons will be aligned to each member card
+    -->
+    <ul class="list-inline member-icons animate text-center">
+      <!--Redirect them to the user information-->
+      <li class="list-inline-item">
+        <button class="btn btn-primary" [routerLink]="['/members/', user.id]">
+          <i class="fa fa-user"></i>
+        </button>
+      </li>
+      <!--Button to hit 'like' the user-->
+      <li class="list-inline-item">
+        <button class="btn btn-primary"
+                (click)="sendLike(user.id)">
+          <i class="fa fa-heart"></i>
+        </button>
+      </li>
+      <!--Button to send the user a message-->
+      <li class="list-inline-item">
+        <!--
+            We are adding [queryParams]="{tab: 3}" so that our URL will 
+            have a query string and will look like http://localhost:4200/members/14?tab=3
+            We need this query string so that we can redirect the tab focus
+            to the Messages tab when we click each message row
+        -->
+        <button class="btn btn-primary" 
+          [routerLink]="['/members', user.id]"
+          [queryParams]="{tab: 3}">
+          <i class="fa fa-envelope"></i>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <!--p for padding-->
+  <div class="card-body p-1">
+    <h6 class="card-title text-center mb-1"><i class="fa fa-user"></i>
+      {{user.knownAs}}, {{user.age}}
+    </h6>
+    <p class="card-text text-muted text-center">{{user.city}}</p>
+  </div>
+</div>
