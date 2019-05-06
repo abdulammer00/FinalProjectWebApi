@@ -1,9 +1,9 @@
 # FinalProjectWebApi
 GroupBy
 Abdul Ammer Akbar Bin Abdul Rahman - Am1709002922 - Do the web development, Erd and BPMN,
-Ahmad Faiz - Do BPMN , ERD and Research about API
-Ahmad Luqman Bin Ismail - AM1709003045- Do WBS , Research about Database
-Amirul Husainiey Bin Zakaria AM1709002953- Do Wireframe , Research about the project 
+Ahmad Faiz Bin Latif AM1709003099 - Do BPMN , ERD and Research about API,
+Ahmad Luqman Bin Ismail - AM1709003045- Do WBS , Research about Database,
+Amirul Husainiey Bin Zakaria AM1709002953- Do Wireframe , Research about the project, 
 
 For the wbs , erd , bpmn , and wireframe details is details is available in the report for more clear and easier way to read and understand it.
 For ERD and BPMN got 2 folder for oldBPMN and OldErd are the diagram that we present on 03/05/2019 
